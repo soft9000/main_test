@@ -1,4 +1,4 @@
-cc=gcc -v -std=gnu18
+cc=gcc -v -std=gnu11
 opts = 
 link = ld
 ifdef OS
