@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-
-void myFunc() /* assumes integer return */
+void myFunc()
 {
     puts("Greetings, Code 'Mon ...");
 }
