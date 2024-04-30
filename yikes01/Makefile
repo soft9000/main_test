@@ -1,19 +1,12 @@
-cc=gcc -v
-opts = 
-link = ld
-
-ifdef OS
-	libs = -LC:/Windows/System32 -lkernel32 -lmingw32 -lcrtdll 
-else
-	libs = -lc
-endif
+cc=gcc
+opts = -v
+link = gcc
 
 all: main_test2.run main_test.run Makefile
 
-# First function becomes void main(void) ...
 main_test2.run: main_test.c
 	$(cc) $(opts) -c main_test.c
-	$(link)  main_test.o -o main_test2.run $(libs)
+	gcc  main_test.o -o main_test2.run 
 	rm -f main_test.o
 	
 main_test.run: main_test.c
